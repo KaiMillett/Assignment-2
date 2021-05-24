@@ -48,5 +48,30 @@ namespace Assignment_2
                 MessageBox.Show("You need to type numbers into all text boxes.");
             }
         }
+
+        private void TabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Reads the length, width and height from the textboxes.
+                double Radius = double.Parse(textBox4.Text);
+                // Works out what the answers are
+                double SurfaceArea = 4 *  ;
+                double Volume = ;
+                // Puts the calculated numbers in the labels
+                label3.Text = "SurfaceArea = " + SurfaceArea;
+                label4.Text = "Volume = " + Volume;
+            }
+            catch
+            {
+                // Shows an error message on the screen if it fails.
+                MessageBox.Show("You need to type numbers into all text boxes.");
+            }
+        }
     }
 }
