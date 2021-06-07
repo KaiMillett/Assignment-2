@@ -16,12 +16,6 @@ namespace Assignment_2
         {
             InitializeComponent();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void TabPage1_Click(object sender, EventArgs e)
         {
 
@@ -62,7 +56,7 @@ namespace Assignment_2
                 double Radius = double.Parse(textBox4.Text);
                 // Works out what the answers are
                 double SurfaceArea = 4 * Math.PI * (Radius * Radius);
-                double Volume = 4/3 * Math.PI * (Radius * Radius * Radius);
+                double Volume = 4 / 3 * Math.PI * (Radius * Radius * Radius);
                 // Puts the calculated numbers in the labels
                 label3.Text = "SurfaceArea = " + SurfaceArea;
                 label4.Text = "Volume = " + Volume;
@@ -88,7 +82,7 @@ namespace Assignment_2
                 double Height = double.Parse(textBox9.Text);
                 // Works out what the answers are
                 double SurfaceArea = Math.PI * Radius*(Radius + (Math.Sqrt(Height * Height) + (Radius * Radius)));
-                double Volume = 1/3 * Math.PI * (Radius * Radius) * Height;
+                double Volume = 1.0 / 3.0 * Math.PI *(Radius * Radius) * Height;
                 // Puts the calculated numbers in the labels
                 label5.Text = "SurfaceArea = " + SurfaceArea;
                 label6.Text = "Volume = " + Volume;
@@ -98,6 +92,11 @@ namespace Assignment_2
                 // Shows an error message on the screen if it fails.
                 MessageBox.Show("You need to type numbers into all text boxes.");
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
