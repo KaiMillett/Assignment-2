@@ -81,7 +81,7 @@ namespace Assignment_2
                 double Radius = double.Parse(textBox7.Text);
                 double Height = double.Parse(textBox9.Text);
                 // Works out what the answers are
-                double SurfaceArea = Math.PI * Radius*(Radius + (Math.Sqrt(Height * Height) + (Radius * Radius)));
+                double SurfaceArea = Math.PI * Radius*Radius + (Math.Sqrt(Height * Height) + (Radius * Radius));
                 double Volume = 1.0 / 3.0 * Math.PI *(Radius * Radius) * Height;
                 // Puts the calculated numbers in the labels
                 label5.Text = "SurfaceArea = " + SurfaceArea;
